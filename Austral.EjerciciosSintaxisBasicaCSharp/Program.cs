@@ -40,7 +40,18 @@ int precio2 = 200;
 //     - Si tiene 10 o menos empleados → "Startup"
 //     - Si tiene Entre 11 y 50 → "Pyme"
 //     - Si tiene más de 50 → "Big"
-
+if (cantidadEmpleados <= 10)
+{
+    Console.WriteLine("Startup");
+}
+else if (cantidadEmpleados>11 cantidadEmpleados<50)
+{
+    Console.WriteLine("Startup");
+}
+else if(cantidadEmpleados>50)
+{
+    Console.WriteLine("Startup");
+}
 // b) En base al monto de inversión de una empresa, clasificar la inversión como:
 //     - Si es menor a 10,000 → "Baja"
 //     - Si está entre 10,000 y 100,000 → "Media"
@@ -49,6 +60,19 @@ int precio2 = 200;
 // c) Según el tipo de cliente ("mayorista" o "minorista"), mostrar el precio final de un producto con descuento si corresponde:
 //     - Si es mayorista → 20% de descuento
 //     - Si es minorista → precio completo
+string tipodecliente = "minorista";
+switch (tipodecliente)
+{
+    case "mayorista":
+        Console.WriteLine("20% de descuento");
+        break;
+    case "minorista":
+        Console.WriteLine("precio completo");
+        break;
+    default:
+        Console.WriteLine("cliente no encontrado");
+        break;
+}
 
 // d) Una distribuidora tiene 20 unidades de cerveza en stock. Un cliente solicita 25 unidades.
 //    Verificar si hay suficiente stock para concretar la venta:
@@ -62,6 +86,10 @@ int precio2 = 200;
 // ==========
 
 // a) Mostrar los primeros 10 números naturales usando un for.
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i);
+}
 
 // b) Dado este array que representa las ventas de una empresa:
 //    int[] ventasMensuales = { 1000, 1200, 950, 1100 };
@@ -70,7 +98,17 @@ int precio2 = 200;
 // c) Hacer una cuenta regresiva del 5 al 1 con while.
 
 // d) Simular un login: pedir usuario hasta que ingrese "admin" con do-while.
+string usuario;
 
+do
+{
+    Console.Write("Ingrese su nombre de usuario: ");
+    usuario = Console.ReadLine();
+}
+while (usuario != "admin");
+
+Console.WriteLine("Login exitoso. ¡Bienvenido, admin!");
+    
 
 // =============
 // 5. Funciones
