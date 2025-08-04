@@ -3,19 +3,25 @@
 // =====================
 
 // a) Declarar una variable con el nombre de una empresa y mostrarla por consola.
-
+string nombreEmpresa = "Wattcamp";
+Console.WriteLine(nombreEmpresa);
 // b) Declarar una variable con la cantidad de empleados y mostrarla por consola.
-
+int cantidadEmpleados = 3;
+Console.WriteLine(cantidadEmpleados);
 // c) Declarar una variable decimal con el ingreso mensual estimado.
-
+float variableDecimal = 12000000;
+Console.WriteLine(variableDecimal);
 // d) Mostrar por consola un mensaje que diga el nombre de la empresa, cantidad e empleados e ingreso.
 
+Console.WriteLine(nombreEmpresa,cantidadEmpleados);
 
 // ==============
 // 2. Operadores
 // ==============
 
 // a) Declarar dos precios de productos y calcular el total de los dos con IVA.
+int precio1 = 100;
+int precio2 = 200;
 
 // b) En base a la siguiente variable -> int ingresoAnual = 1500;
 //    Hacer otra variable que represente el ingreso mensual y mostrarla por consola.
